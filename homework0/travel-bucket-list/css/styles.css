@@ -1,0 +1,56 @@
+h1 {
+	background-color:teal;
+	color:white;
+	text-align: center;
+	margin: 50px auto;
+	padding: 10px 20px;
+	width: 50%;
+}
+body {
+	text-align: center;
+}
+h4 {
+	display:inline;
+	text-align: center;
+	margin: 0 auto;
+}
+.navbar {
+	display:inline;
+	text-align:center;
+	margin: 15px 10px;
+}
+h2 {
+	margin: 0px;
+	padding: 10px;
+}
+.maui {
+	background-color:rgb(63, 191, 191);
+	text-align: center;
+	margin: 50px auto;
+	padding: 10px 20px 20px 20px;
+
+}
+.reykjavik {
+	background-color:rgb(89, 165, 127);
+	text-align:center;
+	margin: 50px auto;
+	padding: 10px 20px 20px 20px;
+}
+.aspen {
+	background-color:rgb(60, 200, 145);
+	text-align: center;
+	margin: 50px auto;
+	padding: 10px 20px 20px 20px;
+}
+.footer {
+	text-align: center;
+	padding-bottom: 50px;
+}
+div {
+	width:50%;
+	margin: 0 auto;
+	}
+
+p {
+	margin: 15px;
+}
