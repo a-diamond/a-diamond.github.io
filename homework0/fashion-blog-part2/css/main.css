@@ -5,9 +5,8 @@ body {
 }
 .title {
 	color:#dd0000;
-}
-h2 .better-dressed {
-	display:inline;
+	font-size:40px;
+	display:inline-block;
 }
 h1 {
 	font-weight: lighter;
@@ -16,30 +15,41 @@ h1 {
 h2 {
 	font-weight: lighter;
 	color:black;
+	text-decoration:none;
+	font-size: 30px;
+}
+.better-dressed {
+	display:inline-block;
 }
 .nav {
-	color:white;
 	padding: 20px;
-	background-color: black;
 }
-
 .nav a {
+	color:#ffffff;
 	font-size: 22px;
-	margin-right: 16px;
-	color: #dddddd;
+	margin: 65px;
 	text-decoration:none;
-	width: 20px
+	width: 20px;
+	background-color: black;
+	margin:5px;
+	padding:0px 62px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/* I can't for the life of me get the nav bar to match the spec! */
 }
 .copyright{
 	color:#bbbbbb;
 	padding-top: 20px;
 }
-footer {
-	color:#dd0000;
+#footer {
+	color:#dddddd;
 	padding-top: 10px
 }
+#footer a {
+	color:red;
+	text-decoration: none;
+}
 article {
-	color:#bbbbbb;
 	border-bottom: solid;
 	border-color: #dddddd;
 	padding-bottom: 20px;
@@ -61,10 +71,15 @@ img {
 	padding-top:10px;
 }
 h3 {
-	color:#2f4f4f;
+	color:#6c6c6d;
+
 }
 li {
 	color:red;
+}
+li::before {
+  color:#6c6c6d; 
+  /*not sure how to get the bullet points to be grey */
 }
 .container {
 	float:left;
@@ -72,7 +87,14 @@ li {
 	padding-top:10px;
 }
 .ad {
-	padding:50px;
-	background-color:black;
-	color:white;
+	padding:10px;
+	border-bottom: solid;
+	border-top: solid;
+	border-color: #dddddd;
+	padding: 20px;
+	border-width: thin;
+	margin:15px 0px;
+}
+p {
+	color:#4e4e4f;
 }

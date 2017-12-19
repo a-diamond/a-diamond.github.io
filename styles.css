@@ -1,0 +1,23 @@
+
+	body {
+		background-color: pink;
+		font-family: roboto;
+		background-image: url("ocean.jpg");
+	}
+		h1 {
+			text-align: center;
+
+		}
+	.about {
+		color: white;
+	}
+	li {
+		color: white;
+		list-style-type: kannada;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 20px;
+	}
+	.pgraph {
+		text-decoration: underline;
+	}
+	
