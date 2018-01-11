@@ -1,0 +1,156 @@
+/*
+
+FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+.header {
+	border-bottom: 8px yellow solid;
+	background-color: black;
+	clear:both;
+	display:flex;
+	justify-content: space-between;
+
+}
+h1 {
+	color:yellow;
+	background-color:black;
+	font-family: 'Merriweather', serif;
+	display:inline-block;
+	}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0 auto;
+	width:1050px;
+}
+.nav {
+	display:flex;
+	font-family:'Oswald', sans-serif;
+	justify-content:flex-end;
+	align-items:center;
+}
+h3 {
+	margin:15px;
+	color:white;
+}
+.banner {
+	background-color:#C6C6C6;
+	text-align:center;
+	font-family: 'Merriweather', sans-serif;
+	padding:15px 0px;
+	clear:both;
+}
+.taste {
+	color:gray;
+	text-decoration:line-through;
+}
+.are {
+	text-decoration: underline;
+	text-decoration-color:yellow;
+}
+.box {
+	background-color:rgba(234, 237, 242, .8);
+	width:400px;
+	height:200px;
+	text-align: center;
+	padding:25px 0px;
+}
+.yellow-box {
+	background-color:yellow;
+	font-weight: bolder;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+	padding:10px;
+	width:200px;
+	margin: 0 auto;
+	border-radius:5px;
+	box-shadow: 5px 5px #888888;
+}
+h4 {
+	font-family:'Merriweather', sans-serif;
+	font-size: 25px;
+	margin:0;
+}
+.box h4 {
+	font-family: 'Oswald', sans-serif;
+}
+.image {
+	background-image:url("../img/coworking.jpg");
+	background-repeat:no-repeat;
+	display:flex;
+	height:500px;
+	width:1050px;
+	align-items:center;
+	justify-content:flex-end;
+	background-size:100%;
+}
+.flexbox {
+	display:flex;
+	background-color:#f4f5f7;
+	width:1050px;
+	justify-content:space-evenly;
+}
+.box-left {
+	padding:30px;
+	border-right:solid .5px gray;
+}
+.box-center {
+	padding:20px;
+	border-right:solid .5px gray;
+}
+.box-right {
+	padding:20px;
+}
+.call-out {
+	font-weight: bold;
+	background-color: #bec4d1;
+	width:250px;
+	text-align:center;
+	padding:10px;
+	border-radius:5px;
+	box-shadow: 5px 5px #888888;
+}
+footer {
+	background-color:black;
+	color:white;
+	padding:15px 5px;
+}
+
+/*
+Select styles are below. Approximate box model values as best as you can.
+
+Three Google Fonts are being used:
+"Source Sans Pro"
+"Merriweather"
+"Oswald"
+
+body
+font-family: "Source Sans Pro"
+
+h1/logo
+font-family: "Merriweather", serif;
+
+.tagline (two brains are better...)
+font-family: "Merriweather";
+background: #C6C6C6;
+
+h2 (Create a Profile; Find a Developer; Find a Designer)
+"Merriweather", serif;
+font-size: 25px;
+
+h2/h3 (Meet your Match!)
+font-family: "Oswald"
+
+Nav Links
+font-family: "Oswald";
+
+Buttons
+font-family: "Oswald";
+
+Callout Buttons (Sign Up Now; Start Your Search...)
+background: #C6C6C6;
+
+*/

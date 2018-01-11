@@ -1,0 +1,55 @@
+/* ALL PAGES */
+body {
+	background: linear-gradient(#99b2db, white);
+}
+h1 {
+	align-content:center;
+}
+
+#nav {
+	display:flex;
+	list-style-type: none;
+	justify-content:flex-end;
+}
+#nav li {
+	margin:5px;
+	padding:20px;
+	width:100px;
+	list-style-type: none;
+	background-color:#5c8ad6;
+	color:white;
+	border:5px;
+	border-radius:2px;
+	text-align: center;
+}
+#footer {
+	background-color: #314463;
+	text-align: left;
+	clear: float;
+	color:gray;
+}
+#box {
+	text-align: center;
+}
+/*HOMEPAGE*/
+.homepage {
+	margin: 0 auto;
+}
+/*SERVICES PAGE*/
+
+/*PATIENT INFO*/
+#bring-box {
+	border:2px blue;
+	float:right;
+}
+
+/*CONTACT PAGE*/
+.contact-page {
+	background-image:url("candid.jpg");
+}
+.treatments {
+	float:right;
+}
+/*PHYSICIANS PAGE*/
+
+/*RESOURCES*/
