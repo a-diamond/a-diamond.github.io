@@ -1,0 +1,17 @@
+.header {
+	text-align: center;
+	color:pink;
+}
+#input-farenheit {
+	float:left;
+	padding-left: 200px;
+}
+#input-celsius {
+	float:right;
+	padding-right: 200px;
+}
+#answer {
+/*	display:none;*/
+	clear:both;
+	text-align:center;
+}
