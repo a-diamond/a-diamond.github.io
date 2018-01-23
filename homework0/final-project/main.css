@@ -1,6 +1,7 @@
 /* ALL PAGES */
 body {
 	background: linear-gradient(#99b2db, white);
+	font-family: 'Frank Ruhl Libre', serif;
 }
 h1 {
 	align-content:center;
@@ -9,10 +10,11 @@ h1 {
 #nav {
 	display:flex;
 	list-style-type: none;
-	justify-content:flex-end;
+	justify-content:end;
+	border:2px solid gray;
 }
 #nav li {
-	margin:5px;
+	margin:8px;
 	padding:20px;
 	width:100px;
 	list-style-type: none;
@@ -22,18 +24,51 @@ h1 {
 	border-radius:2px;
 	text-align: center;
 }
-#footer {
+.nav-link {
+	font-size: 34px;
+}
+footer {
 	background-color: #314463;
 	text-align: left;
 	clear: float;
 	color:gray;
 }
 #box {
-	text-align: center;
+	align-content: center;
+}
+
+#logo {
+	width:199 px;
+	height:120 px;
+	border:0 px; 
+
+}
+#refer {
+	align-content: center;
 }
 /*HOMEPAGE*/
+#welcome {
+	float:center;
+}
 .homepage {
-	margin: 0 auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:stretch;
+	font-size:20px;
+}
+#about {
+	margin:15px;
+	border: solid gray;
+	padding:15px;
+}
+#about-neurology {
+	margin:15px;
+	border: solid gray;
+	padding:15px;
+}
+#building {
+	width:1000;
+	border:0;
 }
 /*SERVICES PAGE*/
 
