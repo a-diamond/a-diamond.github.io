@@ -1,90 +1,330 @@
 /* ALL PAGES */
 body {
-	background: linear-gradient(#99b2db, white);
 	font-family: 'Frank Ruhl Libre', serif;
+	font-size:20px;
+	background-color: rgba(0,0,0,.15);
 }
 h1 {
 	align-content:center;
 }
-
-#nav {
-	display:flex;
-	list-style-type: none;
-	justify-content:end;
-	border:2px solid gray;
-}
-#nav li {
-	margin:8px;
-	padding:20px;
-	width:100px;
-	list-style-type: none;
-	background-color:#5c8ad6;
+.navbar{
+	background-color: #e3f2fd;
 	color:white;
-	border:5px;
-	border-radius:2px;
-	text-align: center;
 }
 .nav-link {
-	font-size: 34px;
+	font-size: 30px;
+	padding:10px;
+	margin:10px;
 }
 footer {
-	background-color: #314463;
-	text-align: left;
-	clear: float;
+	background-color: #e3f2fd;
+	clear: both;
 	color:gray;
+	font-size:20px;
+	align-self: flex-end;
 }
 #box {
 	align-content: center;
 }
-
-#logo {
-	width:199 px;
-	height:120 px;
-	border:0 px; 
-
+.logo {
+	padding-top:200px;
+	padding-bottom:600px;
+	padding-left:600px;
+	padding-right:600px;
+	background-color:white;
+    margin: 0;
+}
+.logo img {
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%, -10%);
 }
 #refer {
-	align-content: center;
+	background-color: white;
 }
+
 /*HOMEPAGE*/
-#welcome {
-	float:center;
+.banner-image {
+	background: url(imgs/building-nosize.jpg) center center no-repeat;
+	background-size: cover;
+	height:900px;
+	overflow: hidden;
+	position:relative;
+}
+@media screen and (min-width: 1280px) {
+	.banner-image {
+  background: url(imgs/building-nosize.jpg) center center no-repeat;
+ }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.banner-image {
+  background: url(imgs/building-nosize.jpg) center center no-repeat;
+ }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.banner-image {
+  background: url(imgs/building-nosize.jpg);
+ }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	.banner-image {
+  background: url(imgs/building-1024.jpg);
+ }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.banner-image {
+  background: url(imgs/building-1024.jpg);
+ }
+}
+.blurb {
+	background: rgba(255,255,255,.9);
+	float:right;
+	width: 25%;
+	padding: 4%;
+	margin: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	font-size:20px;
+	border-radius: 10px;
+	font-size:30px;
+	position:absolute;
+	top:20px;
+	right:10px;
+}
+.blurb h2 {
+	padding-bottom:20px;
+	font-weight: bold;
+	font-size:40px;
 }
 .homepage {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
 	display:flex;
 	justify-content:space-between;
 	align-items:stretch;
-	font-size:20px;
+	font-size:26px;
 }
 #about {
 	margin:15px;
-	border: solid gray;
-	padding:15px;
+	border-right: solid gray;
+	width:50%;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
 #about-neurology {
 	margin:15px;
-	border: solid gray;
-	padding:15px;
+	border-left: solid gray;
+	padding: 2% 3%;
+	width:50%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
-#building {
-	width:1000;
-	border:0;
+.carousel {
+	height:15%;
+	width:100%;
 }
 /*SERVICES PAGE*/
-
+.banner-services {
+	background: url(treatment.jpg) no-repeat;
+	background-position:50% 30%;
+	background-size: cover;
+	height:900px;
+	overflow: hidden;
+}
+#services-page {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
+	display:flex;
+	justify-content:space-between;
+	align-items:stretch;
+	font-size:26px;
+}
+#conditions {
+	width:50%;
+	margin:15px;
+	border-right: solid gray;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+#treatments {
+	width:50%;
+	margin:15px;
+	border-left: solid gray;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.50);
+}
 /*PATIENT INFO*/
+#patient-page {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
+	display:flex;
+	justify-content:space-between;
+	align-items:stretch;
+	font-size:26px;
+}
+.patient-info-banner {
+	background: url(candid.jpg) no-repeat;
+	background-position:50% 30%;
+	background-size: 100% auto;
+	height:900px;
+	overflow: hidden;
+	position:relative;
+}
 #bring-box {
-	border:2px blue;
+	background: rgba(255,255,255,.8);
 	float:right;
+	width: 30%;
+	padding: 3%;
+	box-shadow: 0 0 5px rgba(0,0,0,.60);
+	font-size:26px;
+	border-radius: 10px;
+    position:absolute;
+    right: 5%;
+    top:5%;
 }
-
+#patient-info {
+	margin:15px;
+	border-right: solid gray;
+	padding: 2% 3%;
+	width:50%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+#patient-info-column2 {
+	width:50%;
+	margin:15px;
+	border-left: solid gray;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
 /*CONTACT PAGE*/
-.contact-page {
-	background-image:url("candid.jpg");
+.contact-banner {
+	background:url(sign.jpg) top center no-repeat;
+	background-size: cover;
+	height:900px;
+	overflow: hidden;
 }
-.treatments {
-	float:right;
+.contact-blurb {
+	background: rgba(255,255,255,.9);
+	padding: 3%;
+	margin: 8px;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	border-radius: 10px;
+	font-size:30px;
+}
+#map {
+        height: 50%;
+        width:80%;
+        height:800px;
+      }
+.map-container {
+
 }
 /*PHYSICIANS PAGE*/
+#physicians-page {
+	background: rgba(255,255,255,.9);
+}
+#physicians-banner {
+	background: url(dr-alias.jpg) 60% 40% no-repeat;
+	background-position:50% 30%;
+	background-size: 100% auto;
+	height:900px;
+	overflow: hidden;
+}
+#physicians-about {
+	padding:2%;
+	margin:2%;
+}
+#fox-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#fox-bio img {
+	width:10%;
+	justify-items:space-between;
+}
+#diamond-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#diamond-bio img {
+	width:10%;
+}
+#rosenberg-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#rosenberg-bio img {
+	width:10%;
+}
+#conigliari-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#conigliari-bio img {
+	width:10%;
+}
+#okunola-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#okunola-bio img {
+	width:10%;
+}
+#alias-bio {
+	border:2px solid black;
+	width:70%;
+	margin:2%;
+	padding:2%;
+	display:flex;
+}
+#alias-bio img {
+	width:10%;
+}
 
 /*RESOURCES*/
+#resources-banner {
+	background: url(imgs/waiting-room.jpg) center center no-repeat;
+	background-size: cover;
+	height:700px;
+	overflow: hidden;
+}
+#resources-page {
+	padding: 10px;
+	margin: 10px;
+}
+#container1 {
+	display: inline-block;
+	width: 49%;
+}
+#container2 {
+	display: inline-block;
+	width: 50%;
+}
+.btn-group {
+	margin:10px;
+	display: inline-block !important;
+
+}
+
+.btn {
+
+}

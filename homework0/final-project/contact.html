@@ -6,26 +6,59 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic" rel="stylesheet" type="text/css"> <!-- CHANGE FONTS HERE -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
 	</head>
 
 <body>
-<img id="logo" src="logo.gif" alt="The Neuroscience Center of Northern New Jersey">
-<h1> Contact Info </h1>
+  <div class="logo">
+    <img src="imgs/logo-pixlr.png" alt="The Neuroscience Center of Northern New Jersey">
+  </div>
 
-<ul id="nav">
-	<li><a href="#">Home</a></li>
-	<li><a href="services.html">Services</a></li>
-	<li><a href="patient-info.html">Patient Info</a></li>
-	<li><a href="contact-info.html">Contact Info</a></li>
-	<li><a href="physicians.html">Physicians</a></li>
-	<li><a href="resources.html">Resources</a></li>
-	<li><a href="http://www.neurologychannel.com/common/glossary/">Glossary</a></li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="patient-info.html">Patient Info</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="physicians.html">Physicians</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.neurologychannel.com/common/glossary/">Glossary</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<section class="contact-banner">
+
+</section>
+
 <div id="contact-page">
 
+<div class="contact-blurb">
 <h2>Hours of Operation</h2>
 Monday - Friday: 8:15am - 5:00pm
-<p>
+
 <p>Please call our Morristown office at 973.285.1446 between 9:30 a.m and 4:30 p.m. for an appointment.</p>
 
 <p>All patient visits are by appointment only. We make every effort to run our practice on time. We would therefore appreciate your arriving 15 minutes prior before your scheduled appointment time in order to allow for parking and completion of any forms.</p>
@@ -33,11 +66,19 @@ Monday - Friday: 8:15am - 5:00pm
 <p>In the event of an emergency, please call our office 973.285.1446. One of the physicians in our group is on call 24 hours a day, including weekends and holidays. If the office is closed your call will be taken by our answering service and your message will be relayed immediately. One of our doctors will contact you as soon as possible. If an emergency cannot wait for a telephone reply, have someone take you to the emergency room at Morristown Memorial Hospital.</p>
 
 <p>We are a full service neurological group serving adults (ages 16 and older) and our clinical staff can assist you with any questions.</p>
-
-<!--- HOW TO EMBED A GOOGLE MAP -->
 </div>
+
+<section class="map-container">
+<h2> Find Us!</h2>
+   <div id="map">
+</div>
+</section>
+
+</div>
+
 <footer>
-<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a>
+<div id="refer">
+<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a></div>
 <h4> The Neuroscience Center of Northern New Jersey</h4>
 <p> 310 Madison Avenue, Suite 120, Morristown, New Jersey 07960 Tel: 973.285.1446</p>
 <div> Legal Notice | General Website Disclaimer 
@@ -46,6 +87,25 @@ Monday - Friday: 8:15am - 5:00pm
 
 Medical Website Design by Healthcommunities.com  
 </footer>
+        <script>
+     function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(40.7818131, -74.4514428),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+   var marker = new google.maps.Marker({
+      position: {lat: 40.7818131, lng: -74.4514428},
+      map: map,
+      title: 'The Neuroscience Center of Northern New Jersey',
+    });
+
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzoybs0omkmuypAGluRIkh5SHWGM5Xchk&callback=myMap"
+    async defer></script>
 
 </body>
 </html>

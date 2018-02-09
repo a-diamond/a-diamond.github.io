@@ -6,37 +6,64 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic" rel="stylesheet" type="text/css"> <!-- CHANGE FONTS HERE -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
 <body>
-<img id="logo" src="logo.gif" alt="The Neuroscience Center of Northern New Jersey">
+  <div class="logo">
+    <img src="imgs/logo-pixlr.png" alt="The Neuroscience Center of Northern New Jersey">
+  </div>
 
-<h1> Patient Info </h1>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="patient-info.html">Patient Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="physicians.html">Physicians</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.neurologychannel.com/common/glossary/">Glossary</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<ul id="nav">
-	<li><a href="#">Home</a></li>
-	<li><a href="services.html">Services</a></li>
-	<li><a href="patient-info.html">Patient Info</a></li>
-	<li><a href="contact-info.html">Contact Info</a></li>
-	<li><a href="physicians.html">Physicians</a></li>
-	<li><a href="resources.html">Resources</a></li>
-	<li><a href="http://www.neurologychannel.com/common/glossary/">Glossary</a></li>
-</ul>
-<div id="patient-info-page">
-<div id="bring-box">
+<section class="patient-info-banner">
+  <div id="bring-box">
 <h2>What to Bring to Your Appointment</h2>
 <ul>
-	<li>Your insurance card</li>
-	<li>Physician referral forms if required by insurance</li>
-	<li>A list of current prescriptions and/or over-the-counter medications you are taking, including dose and frequency</li>
-	<li>All pertinent previous neurological evaluations and/or records</li>
-	<li>Any appropriate reports or MRI records you may have</li>
+  <li>Your insurance card</li>
+  <li>Physician referral forms if required by insurance</li>
+  <li>A list of current prescriptions and/or over-the-counter medications you are taking, including dose and frequency</li>
+  <li>All pertinent previous neurological evaluations and/or records</li>
+  <li>Any appropriate reports or MRI records you may have</li>
 </ul>
 
 <p> We make every effort to run our practice on time. We would therefore appreciate it if you could plan on arriving 15 minutes before your scheduled appointment time in order to allow for parking time. </p>
 </div>
+</section>
+<section id="patient-page">
 
+<section id="patient-info">
 <h2>Insurance and Payment Information</h2>
 
 <p> The Neuroscience Center of Northern New Jersey is now particpating with Medicare. We also accept most other insurance plans and provide insurance billing.<p>
@@ -54,8 +81,9 @@
 
 <p>Check return fee: $33.00</p>
 
-<h2>Hospital Affiliations</h2>
-<p>Morristown Memorial Hospital</p>
+</section>
+
+<section id="patient-info-column2">
 
 <h2>Print Patient Forms</h2>
 <p>You can view and/or print the necessary patient forms for your appointment using the links below.<a href="http://www.neurosciencecenternj.com/common/adobe.html">Need help opening these documents?</a>
@@ -71,9 +99,16 @@
 <a href="http://www.neurosciencecenternj.com/privacy.shtml">Notice of Privacy Practices for The Neuroscience Center of Northern New Jersey</a> 
 <p>This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully.
 </p>
-</div>
+
+<h2>Hospital Affiliations</h2>
+<p>Morristown Memorial Hospital</p>
+
+</section>
+</section>
+
 <footer>
-<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a>
+<div id="refer">
+<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a></div>
 <h4> The Neuroscience Center of Northern New Jersey</h4>
 <p> 310 Madison Avenue, Suite 120, Morristown, New Jersey 07960 Tel: 973.285.1446</p>
 <div> Legal Notice | General Website Disclaimer 

@@ -6,45 +6,55 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic" rel="stylesheet" type="text/css"> <!-- CHANGE FONTS HERE -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
 <body>
-<img id="logo" src="logo.gif" alt="The Neuroscience Center of Northern New Jersey">
-<h1> Services </h1>
+<div class="logo">
+<img src="imgs/logo-pixlr.png" alt="The Neuroscience Center of Northern New Jersey">
+</div>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="patient-info.html">Patient Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="physicians.html">Physicians</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resources.html">Resources</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://www.neurologychannel.com/common/glossary/">Glossary</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="services.html">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="patient-info.html">Patient Info</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="physicians.html">Physicians</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="resources.html">Resources</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.neurologychannel.com/common/glossary/">Glossary</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<section class="banner-services">
+</section>
 <div id="services-page">
-<h2> Conditions Treated</h2>
+<div id="conditions">
+<h1> Conditions Treated</h1>
 
 <p> Our practice treats a variety of neurological conditions including the following: </p>
-<ul id="conditions">
+<ul>
 	<li><a href="http://www.healthcommunities.com/als/overview-of-als.shtml">ALS</a></li>
 	<li><a href="http://www.healthcommunities.com/alzheimers-disease/overview-of-alzheimers.shtml">Alzheimer's</a></li>
 	<li><a href="http://www.healthcommunities.com/back-pain/back-pain-diagnosis-lab-tests-imaging-studies_jhmwp.shtml">Back pain</a></li>
@@ -70,11 +80,12 @@
 	<li><a href="http://www.healthcommunities.com/essential-tremor/what-is-essential-tremor.shtml">Tremor</a></li>
 	<li><a href="http://www.healthcommunities.com/nervous-system-tumors/overview-of-ns-tumors.shtml">Tumors (of the nervous system)</a></li>
 	<li><a href="http://www.healthcommunities.com/vertigo/dizziness.shtml">Vertigo</a></li>
-
-<h2> Diagnostic and Treatment Procedures Available </h2>
+</div>
+<div id="treatments">
+<h1> Diagnostic and Treatment Procedures Available </h1>
 <p> We also perform a variety of diagnostics in our office including the following: </p>
 
-<ul id="treatments">
+<ul>
 	<li><a href="http://www.healthcommunities.com/botulinum-toxin-therapy/index.shtml">Botox injections</a> for treating <a href="http://www.healthcommunities.com/movement-disorders/overview-of-movement-disorders.shtml">movements disorders</a> and a variety of neurological conditions</li>
 	<li><a href="http://www.healthcommunities.com/chronic-pain/overview-trigger-point-injections.shtml">Trigger point injections</a> - targeted injection of anti-inflammatory agent and local anesthetic directly into affected muscle tissue for the purpose of pain relief.</li>
 	<li><a href="http://www.healthcommunities.com/brain-nerve-tests/eeg-electroencephalography.shtml">EEG (electroencephalogram)</a></li>
@@ -83,8 +94,11 @@
 	<li><a href="http://www.healthcommunities.com/myasthenia-gravis/diagnosis.shtml#tensilon">Tensilon testing</a></li>
 </ul>
 </div>
+</div>
+
 <footer>
-<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a>
+<div id="refer">
+<a href="http://www.neurosciencecenternj.com/cgi-bin/referral/index.cgi?referalPage=http://www.neurologychannel.com/refer.shtml&retryPage=neurology/refer.html&moreInfo=-nThe+Neuroscience+Center+of+Northern+New+Jersey-n103+Madison+Avenue-nSuite+120-nMorristown%2C+NJ+07960"><img src="hdr_referafriend.gif"></a></div>
 <h4> The Neuroscience Center of Northern New Jersey</h4>
 <p> 310 Madison Avenue, Suite 120, Morristown, New Jersey 07960 Tel: 973.285.1446</p>
 <div> Legal Notice | General Website Disclaimer 
